@@ -1,0 +1,2 @@
+@model CasoEstudioProductosMVC5.Models.Producto
+@{ ViewBag.Title="Detalle"; }<h1>@Model.Nombre</h1><div class="card"><p><b>Código:</b> @Model.Codigo</p><p><b>Categoría:</b> @Model.Categoria</p><p><b>Precio:</b> @Model.Precio.ToString("C")</p><p><b>Existencia:</b> @Model.Existencia</p><p><b>Estado:</b> @(Model.Activo?"Activo":"Inactivo")</p></div><p>@Html.ActionLink("Editar","Edit",new{id=Model.Id},new{@class="btn"}) @Html.ActionLink("Eliminar","Delete",new{id=Model.Id},new{@class="btn danger"}) @Html.ActionLink("Volver","Index")</p>

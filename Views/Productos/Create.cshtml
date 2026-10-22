@@ -1,0 +1,2 @@
+@model CasoEstudioProductosMVC5.Models.Producto
+@{ ViewBag.Title="Nuevo producto"; }<h1>Nuevo producto</h1>@using(Html.BeginForm()){ @Html.AntiForgeryToken() @Html.ValidationSummary(true,"",new{@class="error"}) <div class="card">@Html.Partial("_Form",Model)<button class="btn">Guardar</button> @Html.ActionLink("Cancelar","Index")</div> }

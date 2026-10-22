@@ -1,0 +1,2 @@
+@model CasoEstudioProductosMVC5.Models.Producto
+@{ ViewBag.Title="Eliminar producto"; }<h1>Confirmar eliminación</h1><div class="card"><p>¿Desea eliminar el producto <b>@Model.Nombre</b>?</p><p>Código: @Model.Codigo · Existencia: @Model.Existencia</p>@using(Html.BeginForm()){ @Html.AntiForgeryToken() <button class="btn danger">Sí, eliminar</button> @Html.ActionLink("Cancelar","Details",new{id=Model.Id}) }</div>

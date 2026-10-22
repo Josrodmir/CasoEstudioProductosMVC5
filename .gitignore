@@ -1,0 +1,12 @@
+# Compilación e IDE
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+
+# Restauración de paquetes NuGet
+packages/
+
+# Configuración local con secretos
+Web.Local.config
